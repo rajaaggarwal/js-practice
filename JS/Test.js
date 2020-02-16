@@ -1,6 +1,8 @@
-function Sum(x,y){
-    return x+y;
-}
-var sum = Sum(1,4);
+function calculateSum() {
+    var num1 = document.getElementById('txtNum1').value;
+    var num2 = document.getElementById('txtNum2').value;
 
-console.log(sum);
+    var sum = parseInt(num1) + parseInt(num2);
+
+    document.getElementById('txtResult').value = sum;
+}
