@@ -2,8 +2,42 @@
     <head>
         <title>Test Page</title>
         <script src="/JS/Test.js"></script>
+        <style>
+            body {
+                padding: 20px;
+            }
+            div {
+                border: 1px solid black;
+                padding: 20px;
+              
+            }
+            label {
+                font-size: 20px;
+                margin: 10px;
+            }
+            input {
+                padding: 10px;
+                margin-left: 20px;
+            }
+            button {
+                margin: 10px;
+                padding: 15px;
+                background-color: chartreuse;
+                font-weight: bold;
+            }
+        </style>
     </head>
     <body>
-
+        <form>
+            <div>
+                <label id="lblNum1">Please enter first number: </label>
+                <input type="text" id="txtNum1" name="number1">
+                <label id="lblNum2">Please enter second number: </label>
+                <input type="text" id="txtNum2" name="number2">
+                <button type="button">Sum</button>
+                <label id="lblResult">Result: </label>
+                <input type="text" id="txtResult">
+        </div>
+        </form>
     </body>
 </html>
