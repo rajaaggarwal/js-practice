@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            function GetStarWarsData() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("txtData").innerText = this.responseText;
+                    }
+                };
+                xhttp.open("GET", "https://swapi.co/api/starships/9/", true);
+                xhttp.send();
+            }   
+        </script>
+    </head>
+    <body>
+        <textarea id="txtData" rows="12" cols="100"></textarea>
+        <button id="btnGetData" onclick="GetStarWarsData();">Get Data</button>
+     
+    </body>
+</html>
